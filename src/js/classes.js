@@ -11,11 +11,11 @@ class Patient {
         }
         this.payer= (prix)=>{
             this.argent -= prix;
-            // if(this.argent < 0){
-            //     console.log(`${this.nom} n'a pas pu payer son traitement`);
-            // }else{
-            //     console.log(`${this.nom} a payé son traitement`); 
-            // }
+                if(this.argent < 0){
+                    console.log(`${this.nom} n'a pas pu payer son traitement`);
+                }else{
+                    console.log(`${this.nom} a payé son traitement`); 
+                }
         }
     }
 }
@@ -57,4 +57,11 @@ class Traitement {
     }
 }
 
-export {Patient,Medecin,Diagnostique,Traitement}
+class Maison {
+    constructor(nom,salon){
+        this.nom = nom;
+        this.salon = [];
+    }
+}
+
+export {Patient,Medecin,Diagnostique,Traitement,Maison}

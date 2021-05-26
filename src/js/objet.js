@@ -15,9 +15,10 @@ let pharmacie = {
 }
 
 let cimetiere = {
-    nom : "Cim de Molem",
+    nom : "Cimetiere de Molenbeek",
     tombe : [],
 }
+
 
 
 
