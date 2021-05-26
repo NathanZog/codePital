@@ -1,6 +1,6 @@
 import {Patient,Medecin,Diagnostique,Traitement,Maison} from "./classes.js";
 
-import {salleAttente,pharmacie,cimetiere} from "./objet.js";
+import {salleAttente,pharmacie,cimetiere,chat} from "./objet.js";
 
 let marcus = new Patient ("Marcus","mal indenté",100,"vide","malade");
 let optimus = new Patient ("Optimus","unsave",200,"vide","malade");
@@ -30,6 +30,8 @@ let maisondarthvador = new Maison ("Mustafar",[])
 salleAttente.patients.push(marcus,optimus,sangoku,darthvador,semicolon);
 console.log(salleAttente.patients)
 console.log(`Il y a ${salleAttente.patients.length} personnes dans la ${salleAttente.nom}.`)
+
+chat.miauler();
 
 marcus.seDeplacer(salleAttente.patients,zieger.cabinet)
 console.log(salleAttente.patients,zieger.cabinet)

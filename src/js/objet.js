@@ -19,8 +19,18 @@ let cimetiere = {
     tombe : [],
 }
 
+let chat = {
+    nom: "Edgar",
+    miauler(){
+        setInterval(()=>{
+
+            console.log(`Miaou`)
+        },2000)
+    },
+
+}
 
 
 
-export {salleAttente,pharmacie,cimetiere}
+export {salleAttente,pharmacie,cimetiere,chat}
 
